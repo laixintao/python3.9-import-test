@@ -2,6 +2,7 @@ install:
 
 ```
    git clone git@github.com:laixintao/python3.9-import-test.git
+   cd import_test
    # create your virtualenv...
    # then:
    pip install -e .
