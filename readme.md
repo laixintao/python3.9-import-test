@@ -1,6 +1,17 @@
 install:
 
-under this repo, run `pip install -e .`
+```
+   git clone git@github.com:laixintao/python3.9-import-test.git
+   # create your virtualenv...
+   # then:
+   pip install -e .
+   cd ..
+   python
+   >>> import import_test
+```
+
+You will see different behaviour of Python3.9.0 and Python3.9.6
+   
 
 test:
 
@@ -13,7 +24,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import import_test
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-ModuleNotFoundError: No module named 'import_test'
+  File "/Users/xintao.lai/Downloads/import_test/__init__.py", line 1, in <module>
+    from foo import text
+ModuleNotFoundError: No module named 'foo'
 ```
 
 in python3.9.6 :
